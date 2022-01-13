@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jay Cruz Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="./images/default.png" />
+    <meta
+      name="title"
+      property="og:title"
+      content="Jason Jesus Cruz portfolio"
+    />
+    <meta property="og:type" content="Portfolio" />
+    <meta
+      name="description"
+      property="og:description"
+      content="This is the Software Engineer portfolio website of Jason Jesus Cruz. It includes sections for an about me, skills, projects, blog, and contact info."
+    />
+    <meta name="author" content="Jason Jesus Cruz" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img id="intro-img" src="./images/intro.png" alt="Intro" />
+      <nav id="navbar">
+        <a class="link" href="#about-me">About me</a>
+        <a class="link" href="#skills">Skills</a>
+        <a class="link" href="#projects">Projects</a>
+        <a class="link" href="#blogs">Blog</a>
+        <a class="link" href="#contact">Contact me</a>
+      </nav>
+      <div class="portfolio-heading">
+        <h1 class="portfolio-main-heading">Jason 'Jay' Cruz</h1>
+        <p class="portfolio-sub-heading">Software Engineer</p>
+      </div>
+    </header>
+
+    <section class="about-me" id="about-me">
+      <div class="about-me-img-container">
+        <img
+          class="about-me-img"
+          src="./images/about_me.jpg"
+          alt="Photo of Jay"
+        />
+      </div>
+
+      <div class="about-me-info-container">
+        <h2 class="about-me-heading">About Me</h2>
+        <p class="about-me-body">
+          My name is Jason 'Jay' Cruz. I'm a Software Engineer who's originally from New York (born and
+          raised) but now based out of the Orlando FL area. A Software
+          Engineering bootcamp graduate from the
+          <a class="about-me-link" href="https://flatironschool.com/"
+            >Flatiron School</a
+          >, and Computer Programming graduate from my local school
+          <a class="about-me-link" href="https://valenciacollege.edu/"
+            >Valencia College</a
+          >.
+        </p>
+        <!-- More about me -->
+        <div class="about-me-more-container">
+          <button class="about-me-more-btn" id="about-me-more-btn">
+            More about me
+          </button>
+          <div class="about-me-more-info"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skills-header">Skills</h2>
+      <div class="skills-container">
+        <div class="skills-technical">
+          <h3 class="skills-technical-header">Technical skills</h3>
+          <div class="skills-technical-list-container">
+            <ul class="skills-technical-list">
+              <h4>General:</h4>
+              <li>FullStack Software Engineering</li>
+              <li>Frontend Software Engineering</li>
+              <li>Object-Oriented Programming</li>
+              <li>Algorithms and Data Structures</li>
+            </ul>
+
+            <ul class="skills-technical-list">
+              <h4>Technologies:</h4>
+              <li>Javascript</li>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Ruby</li>
+              <li>Ruby on Rails</li>
+              <li>HTML5</li>
+              <li>CSS</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </div>
+
+        <br />
+        <div class="skills-soft">
+          <h3 class="skills-soft-header">Soft skills</h3>
+          <ul class="skills-soft-list">
+            <li>Problem solving and critical thinking</li>
+            <li>Self learner and starter</li>
+            <li>Communication skills</li>
+            <li>Attention to detail</li>
+            <li>Adaptability</li>
+            <li>Patience</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="projects-heading">Portfolio Projects</h2>
+      <div class="projects-container">
+        <div class="project">
+          <a
+            class="project-link"
+            href="https://stocks-chaser-app.herokuapp.com/"
+          >
+            <img
+              class="project-img"
+              src="./images/stocks_chaser_project.jpeg"
+              alt="Stocks Chaser logo"
+            />
+          </a>
+          <h3 class="project-title">Stocks Chaser</h3>
+          <p class="project-details">
+            Stock market tracking application with adjusted daily time series
+            data for stock charts.
+          </p>
+          <div class="project-github-link">
+            <a href="https://github.com/CoderJay06/stocks-chaser-frontend"
+              >Source code (Github)</a
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <a class="project-link" href="https://dev-library-app.herokuapp.com/">
+            <img
+              class="project-img"
+              src="./images/dev_library_project.png"
+              alt="Dev Library logo"
+            />
+          </a>
+          <h3 class="project-title">Dev Library</h3>
+          <p class="project-details">
+            A digital library application for Software Development books.
+          </p>
+
+          <div class="project-github-link">
+            <a href="https://github.com/CoderJay06/dev_library"
+              >Source code (Github)</a
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <a
+            class="project-link"
+            href="https://chrome.google.com/webstore/detail/connections/llogeafhdijdbgdomgdpdhipjinghghk/related"
+          >
+            <img
+              class="project-img"
+              src="./images/connections_logo.png"
+              alt="Connections screentshot"
+            />
+          </a>
+          <h3 class="project-title">Connections</h3>
+          <p class="project-details">
+            A google chrome extension for storing the contact info of new
+            connection's met on the web.
+          </p>
+          <div class="project-github-link">
+            <a href="https://github.com/CoderJay06/connections"
+              >Source code (Github)</a
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <a class="project-link" href="https://guard-reports.herokuapp.com/">
+            <img
+              class="project-img"
+              src="./images/guard-reports-project.png"
+              alt="Guard Reports logo"
+            />
+          </a>
+          <h3 class="project-title">Guard Reports</h3>
+          <p class="project-details">
+            An application for security guard reporting. For organizing daily
+            activity reports and incident reports.
+          </p>
+          <div class="project-github-link">
+            <a href="https://github.com/CoderJay06/guard_reports"
+              >Source code (Github)</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+      <h2 class="blogs-header">Recent Blogs</h2>
+      <div class="blogs-list"></div>
+      <div class="blogs-links">
+        <p>
+          More blogs on <a href="https://medium.com/@jay-cruz">Medium</a> and
+          <a href="https://dev.to/coderjay06">Dev.to</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <section class="contact" id="contact">
+        <h2 class="contact-heading">Contact Me</h2>
+
+        <div class="contact-container">
+          <div class="contact-details-container">
+            <h4 class="contact-title">Phone & email</h4>
+            <ul class="contact-details">
+              <li class="contact-item">
+                <a class="contact-link" href="tel:1-631-578-6185">
+                  <span>&#128222;</span> 1-631-578-6185
+                </a>
+              </li>
+              <li class="contact-item">
+                <a class="contact-link" href="mailto:jjcru06@gmail.com">
+                  <span>&#9993;</span> jjcru06@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-social-container">
+            <h4 class="contact-title">Social media</h4>
+            <ul class="contact-social">
+              <li class="contact-item">
+                <a
+                  class="contact-link"
+                  href="https://www.linkedin.com/in/jason-j-cruz/"
+                  ><i style="font-size: 24px;" class="fa">&#xf08c;</i>
+                  Linkedin</a
+                >
+              </li>
+              <li class="contact-item">
+                <a class="contact-link" href="https://github.com/CoderJay06"
+                  ><i style="font-size: 24px;" class="fa">&#xf09b;</i> Github</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
