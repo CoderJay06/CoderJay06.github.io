@@ -36,17 +36,10 @@ async function fetchBlogs() {
   return json;
 }
 
-// fetch medium blogs rss feed
-fetchBlogs().then((data) => {
-  const { items: blogs } = data;
-
-  // render each blog to the page
-  blogsList.innerHTML = getBlogs();
-
-  function getBlogs() {
-    return blogs
-      .map((blog) => {
-        return `
+function render(blogs) {
+  return blogs
+    .map((blog) => {
+      return `
         <div class="blog">
           <a class="blog-link" href=${blog.link}>
             <img class="blog-img" src=${blog.thumbnail} alt="Blog" />
@@ -56,11 +49,36 @@ fetchBlogs().then((data) => {
           Published: ${blog.pubDate.substring(0, blog.pubDate.indexOf(" "))}
           </p>
         </div>
-        <hr />
       `;
-      })
-      .join("");
+    })
+    .join("");
+}
+
+function column1(blogs) {
+  return render(blogs);
+}
+
+function column2(blogs) {
+  return render(blogs);
+}
+
+// fetch medium blogs rss feed
+fetchBlogs().then((data) => {
+  const { items: blogs } = data;
+
+  function getBlogs() {
+    return `
+      <div class="blogs-column">
+        ${column1(blogs.slice(0, 5))}
+      </div>
+      <div class="blogs-column">
+        ${column2(blogs.slice(5, blogs.length))}
+      </div>
+    `;
   }
+
+  // render each blog to the page
+  blogsList.innerHTML = getBlogs();
 });
 
 // render the blogs
