@@ -14,7 +14,7 @@
     <meta
       name="description"
       property="og:description"
-      content="This is the Software Engineer portfolio website of Jason Jesus Cruz. It includes sections for an about me, skills, projects, blog, and contact info."
+      content="This is the Software Engineering portfolio website of Jason Jesus Cruz. It includes sections for an about me, skills, projects, blog, and contact info."
     />
     <meta name="author" content="Jason Jesus Cruz" />
     <meta name="monetization" content="$ilp.uphold.com/W8HBgLMGDp6x">
@@ -38,12 +38,13 @@
     <header class="header">
       <img id="intro-img" src="./images/intro.png" alt="Intro" />
       <nav id="navbar">
-        <a class="link" href="#about-me">About me</a>
+        <a class="link" href="#about-me">About</a>
         <a class="link" href="#skills">Skills</a>
         <a class="link" href="#projects">Projects</a>
+        <a class="link" href="#certs">Certifications</a>
         <a class="link" href="#blogs">Blog</a>
-        <a class="link" href="#feedback">My Feedback</a>
-        <a class="link" href="#contact">Contact me</a>
+        <a class="link" href="#feedback">Feedback</a>
+        <a class="link" href="#contact">Contact</a>
       </nav>
       <div class="portfolio-heading">
         <h1 class="portfolio-main-heading">Jason 'Jay' Cruz</h1>
@@ -215,6 +216,33 @@
             >
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="certs" id="certs">
+      <h2 class="certs-header">Certifications</h2>
+      <div class="carousel">
+          <div class="carousel-item carousel-item-visible">
+              <img src="./images/FL_Cert.png" 
+                   alt="Flatiron School Software Engineering certification" />
+          </div>
+          <div class="carousel-item">
+              <img src="./images/Valencia_Programming_Cert.png" 
+                   alt="Valencia College Computer Programming certification" />
+          </div>
+          <div class="carousel-item">
+              <img src="./images/Valencia_WebDev_Cert.png" 
+                   alt="Valencia College Web Development certification" />
+          </div>
+          <div class="carousel-actions">
+              <button id="carousel-button-prev" aria-label="Previous"><</button>
+              <button id="carousel-button-next" aria-label="Next">></button>
+          </div>
+          <div class="carousel-dots">
+              <input class="dot selected-dot" type="radio" name="dot" checked />
+              <input class="dot" type="radio" name="dot" />
+              <input class="dot" type="radio" name="dot" />
+          </div>
       </div>
     </section>
 
