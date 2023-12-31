@@ -39,13 +39,13 @@ async function fetchBlogs() {
   return json;
 }
 
-function render(blogs) {
+function render(blogs, thumbnails) {
   return blogs
-    .map((blog) => {
+    .map((blog, i) => {
       return `
         <div class="blog">
           <a class="blog-link" href=${blog.link}>
-            <img class="blog-img" src=${blog.thumbnail} alt="Blog" />
+            <img class="blog-img" src=${thumbnails[i]} alt="Blog" />
           </a>
           <h3 class="blog-title">${blog.title}</h3>
           <p class="blog-date">
@@ -58,11 +58,25 @@ function render(blogs) {
 }
 
 function column1(blogs) {
-  return render(blogs);
+  const column1Thumbnails = [
+    "https://miro.medium.com/v2/resize:fit:875/0*zh8QjGDXCF925iMI",
+    "https://miro.medium.com/v2/resize:fit:875/0*FWQqYc67jd3j2RDV",
+    "https://miro.medium.com/v2/resize:fit:779/1*lvgQkkny9aA3RLSAWBSi5w.png",
+    "https://miro.medium.com/v2/resize:fit:875/0*t9Z2pITR0Y-Xxlpj",
+    "https://miro.medium.com/v2/resize:fit:875/0*8pLVCLaUJBFyWgS5",
+  ];
+  return render(blogs, column1Thumbnails);
 }
 
 function column2(blogs) {
-  return render(blogs);
+  const column2Thumbnails = [
+    "https://miro.medium.com/v2/resize:fit:875/0*NbP5G3dNo8yz76Gr",
+    "https://miro.medium.com/v2/resize:fit:875/0*yGXiFy7nd1w4zy6i",
+    "https://miro.medium.com/v2/resize:fit:875/0*7JeJaSICdQ0bMd7J",
+    "https://miro.medium.com/v2/resize:fit:875/0*Q0H1rZNSlqhF9Fiy",
+    "https://miro.medium.com/v2/resize:fit:875/1*kA5wc-ikiYKL0p-MlcWjkA.png",
+  ];
+  return render(blogs, column2Thumbnails);
 }
 
 // fetch medium blogs rss feed
