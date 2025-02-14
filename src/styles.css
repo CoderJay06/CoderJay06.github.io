@@ -285,6 +285,12 @@ p {
   list-style-type: upper-roman;
   list-style-position: inside;
   margin-right: 2em;
+  max-width: 90%; /* adjust width to fit smaller screens */
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  word-wrap: break-word; /* Ensure long words break instead of overflow */
+  overflow-wrap: break-word;
 }
 
 .skills-technical-list li,
