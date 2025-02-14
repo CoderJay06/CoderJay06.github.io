@@ -166,6 +166,70 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+/**** Experience ****/
+.experience {
+  width: 100%;
+  padding: 1em;
+  margin-top: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.experience-container {
+  box-shadow: 16px 8px 16px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 1em;
+  margin: 0 2em;
+  background: #642b73; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c6426e,
+    #642b73
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #c6426e,
+    #642b73
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: whitesmoke;
+}
+
+.experience-container:hover {
+  background: linear-gradient(#642b73, #c6426e);
+  font-weight: bolder;
+}
+
+.experience-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.experience-sub-header {
+  margin-bottom: 1.5em;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.experience-list {
+  flex: 1;
+}
+
+.experience-list {
+  text-align: center;
+  list-style-type: upper-roman;
+  list-style-position: inside;
+  margin-right: 2em;
+}
+
+.experience-list li {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1em;
+  word-wrap: break-word;
+  max-width: 80%;
+}
+
 /**** Skills ****/
 .skills {
   width: 100%;
@@ -610,6 +674,10 @@ p {
 
   h2 {
     font-size: 4rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
   }
 
   p {
