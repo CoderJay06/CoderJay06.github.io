@@ -285,12 +285,6 @@ p {
   list-style-type: upper-roman;
   list-style-position: inside;
   margin-right: 2em;
-  max-width: 90%; /* adjust width to fit smaller screens */
-  margin: auto;
-  padding: 10px;
-  box-sizing: border-box;
-  word-wrap: break-word; /* Ensure long words break instead of overflow */
-  overflow-wrap: break-word;
 }
 
 .skills-technical-list li,
@@ -593,6 +587,42 @@ p {
 
 /** Mobile <  400px **/
 @media (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* #intro-img {
+    height: 25vh;
+  } */
+
+  .portfolio-main-heading {
+    font-size: 2rem;
+  }
+
+  .skills-technical-list-container {
+    flex-flow: column wrap;
+  }
+
+  .blog {
+    width: 100%;
+  }
+
+  .contact-container {
+    flex-flow: column;
+    padding-bottom: 1em;
+  }
+
+  .contact-details-container,
+  .contact-social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/** Mobile <  500px **/
+@media (max-width: 500px) {
   body {
     overflow-x: hidden;
   }
